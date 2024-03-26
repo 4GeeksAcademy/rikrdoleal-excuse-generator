@@ -26,15 +26,5 @@ let generateExcuse = () => {
   let possessionIndex = Math.floor(Math.random() * possession.length);
   let whereIndex = Math.floor(Math.random() * where.length);
 
-  return (
-    pronoun[pronounIndex] +
-    " " +
-    subject[subjectIndex] +
-    " " +
-    action[actionIndex] +
-    " " +
-    possession[possessionIndex] +
-    " " +
-    where[whereIndex]
-  );
+  return `${pronoun[pronounIndex]} ${subject[subjectIndex]} ${action[actionIndex]} ${possession[possessionIndex]} ${where[whereIndex]}`;
 };
